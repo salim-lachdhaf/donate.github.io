@@ -4,7 +4,7 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script><script type="text/javascript" src="https://blockchain.info/Resources/js/pay-now-button.js"></script>
 <style>
 html { 
-  background: url(bg.jpg) no-repeat center center fixed; 
+  background:url(bg.jpg) no-repeat center center fixed; ;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -13,19 +13,21 @@ html {
 </style>
 </head>
 </head>
-<body>
-<center>
+<body style = "font-family:verdana, arial,courier; color:white">
+<table width= '100%' height='100%'>
+<tr>
+<td valign="middle" align="center">
 <div style="font-size:16px;margin:0 auto;width:300px" class="blockchain-btn"
      data-address="1DBEbUABndnDZiaWETyRs1np9MViiYouJx"
      data-shared="false">
-    <div class="blockchain stage-begin">
+    <div class="blockchain stage-begin" style="cursor:hand;">
         <img src="https://blockchain.info/Resources/buttons/donate_64.png"/>
     </div>
     <div class="blockchain stage-loading" style="text-align:center">
         <img src="https://blockchain.info/Resources/loading-large.gif"/>
     </div>
     <div class="blockchain stage-ready">
-         <p align="center">Please Donate To Bitcoin Address: <b>[[address]]</b></p>
+         <p align="center">Please Donate To Bitcoin Address: <br><br><b>[[address]]</b></p>
          <p align="center" class="qr-code"></p>
     </div>
     <div class="blockchain stage-paid">
@@ -35,6 +37,8 @@ html {
         <font color="red">[[error]]</font>
     </div>
 </div>
-</center>
+</td>
+</tr>
+</table>
 </body>
 </html>
